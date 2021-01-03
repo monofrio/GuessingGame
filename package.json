@@ -1,0 +1,21 @@
+{
+  "name": "guessinggame",
+  "version": "1.0.0",
+  "description": "Guess Game, pick a number from 1 - 100",
+  "main": "index.js",
+  "dependencies": {
+    "jasmine": "^3.6.3"
+  },
+  "devDependencies": {},
+  "scripts": { "test": "jasmine" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monofrio/GuessingGame.git"
+  },
+  "author": "Mark Onofrio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monofrio/GuessingGame/issues"
+  },
+  "homepage": "https://github.com/monofrio/GuessingGame#readme"
+}

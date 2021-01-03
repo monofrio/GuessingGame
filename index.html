@@ -2,20 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Guessing Game by Mark Onofrio</title>
-    <link href="style.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="main.css" type="text/css" rel="stylesheet"/>
 </head>
-<body>
-<header>
-    <h1>Guessing Game</h1>
-</header>
-<section><p>A list of previous guesses</p></section>
-<section>
-<form>
-    <input value="" type="text" name="guess" alt="" id="guess" />
-    <button value="submit" >Submit</button>
-    <button value="reset" >Reset</button>
-</form>
-</section>
+<body class="text-center">
+<main class="form-signin">
+    <div class="card ">
+        <header class="card-header">
+            <h5 id="message">Pick a number from 1-100</h5>
+        </header>
+        <section class="card-body">
+
+            <span id="nextPlayHint" class="h5"></span>
+            <div id="guesses" class="col">
+                <ul id="guess-list">
+                    <li class="guess">_</li>
+                    <li class="guess">_</li>
+                    <li class="guess">_</li>
+                    <li class="guess">_</li>
+                    <li class="guess">_</li>
+                </ul>
+            </div>
+            <div id="">
+                <label for="guess" class="sr-only">Submit a number</label>
+                <input value="" type="text" name="guess" alt="" id="guess" maxlength='3' min="1" max="100"
+                       autofocus=autofocus required/>
+            </div>
+            <div>
+                <button id="submit" class="btn btn-outline-primary btn-lg" type="button">Submit</button>
+                <button id="hint" class="btn btn-warning btn-sm" type="button">Hint</button>
+                <button id="resetButton" class="btn btn-danger btn-sm" type="button">Reset</button>
+            </div>
+        </section>
+    </div>
+</main>
+
+<script src="js/guessing-game.js"></script>
 </body>
 </html>
